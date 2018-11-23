@@ -14,20 +14,26 @@ body{
 .container {
     grid-area: a;
     background-color: rgb(0,40,104);
+}
+.star {
     color: white;
+    margin: auto;
+    padding: 6px 35px 6px 35px;
+    transition: transform 500ms ease-in-out;
+    position: relative;
 }
-.star-container-even{
+.states{
+    position: absolute;
+    transition: transform 500ms ease-in-out;
+}
+.even{
     text-align: center;
-    padding: 6px 0 6px 0;
 }
-.star-container-odd{
+.odd{
     text-align: center;
-    padding: 6px 0 6px 0;
 }
-i{
-    padding: 0 35.5px 0 35.5px;
-}
-/*Stripe styling*/
+
+/*Strpe style*/
 .container-2 {
     grid-area: b;
 }
