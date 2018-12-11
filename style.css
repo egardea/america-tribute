@@ -15,22 +15,27 @@ body{
     grid-area: a;
     background-color: rgb(0,40,104);
 }
-.star {
-    color: white;
-    margin: auto;
-    padding: 6px 35px 6px 35px;
-    transition: transform 500ms ease-in-out;
-    position: relative;
-}
-.states{
-    position: absolute;
-    transition: transform 500ms ease-in-out;
-}
 .even{
     text-align: center;
 }
 .odd{
     text-align: center;
+}
+i{
+    transition: 500ms;
+    cursor: pointer;
+    color: white;
+}
+i:hover{
+    transform: scale(1.1);
+}
+.state{
+    position: relative;
+    font-size: 10.5px;
+    top: -33px;
+    color: rgb(191, 10, 48);
+    z-index: 10;
+    visibility: hidden;
 }
 
 /*Strpe style*/
