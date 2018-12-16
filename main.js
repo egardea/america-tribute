@@ -1,13 +1,21 @@
-var x = document.querySelector('.state');
+$(document).ready(function(){
+    $('.next').on('click', function(){
+        var currentImg = $('.active');
+        var nextImg = currentImg.next();
 
-for (var i = 0; i < 11; i++){
-    x[i].addEventListener('click', hideText, false);
-}
+        if(nextImg.lenght){
+            currentImg.removeClass('active').css('display', none);
+            nextImg.addClass('active').css('display', inline-block);
+        }
+    });
 
-function hideText(e){
-    if(x.style.visibility === 'hidden'){
-        x.style.visibility = '';
-    } else {
-        x.style.visibility = 'visible';
-    }
-};
+    $('.prev').on('click', function(){
+        var currentImg = $('.active');
+        var prevImg = currentImg.prev();
+
+        if(prevImg.lenght){
+            currentImg.removeClass('active').css('display', none);
+            prevImg.addClass('active').css('display', inline-block);
+        }
+    });
+});
