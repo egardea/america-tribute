@@ -4,7 +4,7 @@ body{
     width: 100%;
 }
 
-/*Star styling*/
+/*intro styling*/
 .intro{
     text-align: center;
     height: 100px;
@@ -15,32 +15,33 @@ body{
     transition: 500ms;
 }
 
+/*License plate styling*/
 .container {
     height: 900px;
     background-color: rgb(0,40,104);
 }
 
-.states{
-    display: none;
+.inner-slider{
     position: relative;
-    top: 300px;
-    left: 615px;
-    height: 295px;
-    width: 600px;
+    top: 150px;
+    left: 485px;
     border: 5px solid white;
-    border-radius: 2.5%;
+    border-radius: 1.5%;
+    height: 400px;
+    width: 825px;
 }
-.active {
+.inner-slider img{
+    height: 400px;
+    width: 825px;
+    display: none;
+}
+.inner-slider img.active{
     display: inline-block;
 }
-i{
-    color: white;
-    position: relative;
-    left: 615px;
-    top: 175px;
-}
+
 .next, .prev{
-    z-index: 100;
+    position: relative;
+    cursor: pointer;
 }
 
 /*Strpe style*/
