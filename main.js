@@ -46,3 +46,6 @@ let slideImg = document.querySelectorAll('.inner-slider img'),
     });
     
     startSlide();
+
+    //Stripe Carousel
+    let carousel = document.querySelector('.stripe-slide')
