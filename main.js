@@ -2,7 +2,7 @@ let slideImg = document.querySelectorAll('.inner-slider img'),
     arrowLeft = document.querySelector('.prev'),
     arrowRight = document.querySelector('.next'),
     current = 0;
-//Clear all Images
+    //Clear all Images
     function reset(){
         for(let i = 0; i < slideImg.length; i++){
             slideImg[i].style.display = 'none';
@@ -48,4 +48,4 @@ let slideImg = document.querySelectorAll('.inner-slider img'),
     startSlide();
 
     //Stripe Carousel
-    let carousel = document.querySelector('.stripe-slide')
+    
